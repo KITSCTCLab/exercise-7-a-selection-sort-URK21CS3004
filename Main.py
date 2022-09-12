@@ -3,10 +3,9 @@ from typing import List
 def selectionSort(array, size) -> List[int]:  
   
   for i in range(1,size-1):
-    small_index = i
+    small = i
     for index in range(i + 1,size):
-      if array[index] < array[small_index]:
-        small_index = index
+      if array[index] < array[small]:
   return array     
 
 # Do not change the following code
